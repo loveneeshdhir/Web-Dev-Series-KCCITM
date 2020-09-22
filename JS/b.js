@@ -1,0 +1,11 @@
+var mystr="hello bhavya";
+var mynum=100;
+var mybool=false;
+var myfloat=10.88;
+document.write('mystr='+typeof(mystr)+'<br>');
+document.write('mynum='+typeof(mynum)+'<br>');
+document.write('mybool='+typeof(mybool)+'<br>');
+document.write('myfloat='+typeof(myfloat)+'<br>');
+alert("warning");
+confirm('do you agree');
+prompt("Enter your name");

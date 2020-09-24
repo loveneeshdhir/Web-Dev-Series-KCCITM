@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script>
+            function fun()
+            {
+                document.write("this is a function");
+                var str="this is a function return";
+                return str;
+            }
+            function fun1(str1,str2)
+            {
+                str3="this is 1st string"+" "+str1+" "+str2;
+                return str3;
+            }
+            function fun2(a,b)
+            {
+                c=parseInt(a)+parseInt(b);
+                return c;
+            }
+            function fun3(a,b)
+            {
+                c=parseFloat(a)+parseFloat(b);
+                return c;
+            }
+            function display(a)
+            {
+                document.write(""+"<br>");
+                i=0;
+                for(i in a)
+                {
+                document.write(a[i]+"<br>");
+                }
+                i++;
+            }
+            
+
+        </script>
+    </head>
+    <body>
+        <center>
+            <script>
+                document.write("<h3>"+fun()+"</h3>");
+                document.write("<h3>"+fun1("STR1","STR2")+"</h3>");
+                document.write("<h3>"+"Addition is "+fun2(4,5)+"</h3>");
+                document.write("<h3>"+"Float addition is "+fun3(4.22,5.33)+"</h3>");
+                var ar=new Array(10);
+                for(i=0;i<10;i++)
+                {
+                    ar[i]=i;
+                }
+                display(ar);
+            </script>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>dhtml</title>
+        <script type="text/javascript">
+        function display(color_name)
+        {
+            document.body.style.backgroundColor=color_name;
+        }
+        </script>
+    </head>
+    <body>
+        <center>
+            <form name="form1">
+                <b>Enter some color name here</b><br>
+                <input type="text" name="text1"><br><br><br>
+                <input type="button" name="button1" value="click to change background color" onclick="display(form1.text1.value)">
+            </form>
+        </center>
+    </body>
+</html>

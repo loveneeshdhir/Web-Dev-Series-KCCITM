@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <p>Press and hold down a key inside text field</p>
+        <input type="text" id="demo" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
+        <script>
+            function keydownFunction() {
+                document.getElementById("demo").style.backgroundColor = "pink";
+            }
+            function keyupFunction() {
+                document.getElementById("demo").style.backgroundColor = "lightgrey";
+            }
+        </script>
+    </body>
+</html>

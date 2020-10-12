@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script>
+            function display(a)
+                {
+                    i=0;
+                    for(i in a)
+                        {
+                            document.write(a[i]+"</br>");
+                            i++;
+                        }
+                }
+            function sort(a)
+                {
+                    for(i=0;i<a.length-1;i++)
+                        {
+                            for(j=i+1;j<a.length;j++)
+                                {
+                                    if(a[i]>a[j])
+                                        { 
+                                            temp=a[i];
+                                            a[i]=a[j]; 
+                                            a[j]=temp;
+                                        }
+                                }
+                        }
+                }
+        </script>
+    </head>
+    <body>
+        <center>
+        <script>
+            var arr=new Array(2,8,1,9);
+            document.write("array value before sorting....."+"</br>");
+            display(arr);
+            sort(arr);
+            document.write("array value after sorting....."+"</br>");
+            display(arr);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>SELECT YOUR FAVOURITE CHOCOLATE BY ON CHANGE</title> 
+    </head>
+    <body>
+        <p>select a chocolate from the list</p>
+        <select id="mySelect" onchange="myFunction()">
+            <option value="none">select chocolate</option>
+            <option value="kitkat">kitkat</option>
+            <option value="dairy milk">dairy milk</option>
+            <option value="munch">munch</option>
+            <option value="5star">5star</option>
+            <option value="Temptation">Temptation</option>
+        </select>
+        <p>when you select a new chocolate , a function is triggered which outputs the value of selected chocolate.</p>
+        <p id="demo"></p>
+        <script type="text/javascript">
+            function myFunction()
+            {
+                var x = document.getElementById("mySelect").value;
+                document.getElementById("demo").innerHTML = "You selected:" + x;
+            }
+        </script>
+    </body>
+</html>

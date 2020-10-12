@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <center>
+        <script>
+            arr=new Array(3);
+            for(i=0;i<3;i++)
+            {
+                arr[i]=new Array(3);
+            }
+            document.write("inserting array element value <br>");
+            for(i=0;i<3;i++)
+            {
+                for(j=0;j<3;j++)
+                    {
+                        var c= prompt("enter the value arr["+i+"]["+j+"]");
+                        arr[i][j]=c;
+                        document.write(arr[i][j]+"&nbsp;&nbsp;&nbsp");
+                    }
+                    document.write("<br>");
+            }
+        </script>
+    </body>
+</html>
